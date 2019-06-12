@@ -1,0 +1,231 @@
+.XuQiu {
+	width: 75%;
+	height: 2000px;
+	margin: 0 auto;
+	background: #CBE0C3;
+}
+
+.title {
+	width: 50%;
+	height: 40px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	background: #2EBFAF;
+}
+
+.zhao {
+	width: 49%;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	background: #EC096C;
+}
+
+.jie {
+	width: 49%;
+	height: 40px;
+	float: right;
+	line-height: 40px;
+	background: #BE0EE5;
+}
+
+.title li:hover {
+	background-color: #363636;
+	color: #0ED2DC;
+}
+
+.li.active {
+	background: #363636;
+}
+
+/*888888888888888888888888888888888888*/
+.news {
+	width: 100%;
+	height: auto;;
+	margin-bottom: 23px;
+	background: #78A4B1;
+}
+
+.news_title {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 4px;
+	background: #41516B;
+}
+
+.p_news_title {
+	font-size: 20px;
+	font-family: "黑体";
+}
+
+.user_news {
+	width: 100%;
+	height: 50px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	/*background: #C76C6E;*/
+}
+
+.user_source {
+	width: 10%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	/*background: #0FBCA4;*/
+}
+
+.p_user_source {
+	font-size: 16px;
+}
+
+.user_img {
+	width: 5%;
+	height: 100%;
+	float: left;
+	position: relative; /*设置该div为绝对定位*/
+	text-align: center;
+	/*background:#C6CB1E;*/
+}
+
+.user_img_img {
+	position: absolute; /*设置该img为相对定位*/
+	width: 40px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.user_name {
+	width: 10%;
+	height: 100%;
+	float: left;
+	text-align: left;
+	line-height: 50px;
+	/*background:#EF5417;*/
+}
+
+.describe {
+	width: 100%;
+	height: auto;
+	background: #78A4B1;
+	word-wrap: break-word; /*换行*/
+	word-break: break-all;
+	overflow: hidden;
+}
+
+.limit_time {
+	width: 100%;
+	height: 30px;
+	background: #78A4B1;
+}
+
+.p_float1 {
+	float: left;
+	font-size: 18px;
+	padding-left: 5px;
+}
+
+.p_float2 {
+	float: left;
+	font-size: 15px;
+	padding-left: 5px;
+	text-indent: 2em; /*首行空两格*/
+}
+
+.p_float3 {
+	float: left;
+	margin-left: 10px;
+	line-height: 30px;
+	font-size: 15px;
+}
+
+.p_float4 {
+	float: left;
+	line-height: 30px;
+	font-size: 15px;
+}
+
+.help_him {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 3px;
+	background: #CC5151;
+}
+
+.receive {
+	width: 30%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	background: #0FBCA4;
+}
+
+.but_receive {
+	width: 38%;
+	height: 50px;
+	font-size: 16px;
+	font-family: "黑体";
+	border-radius: 5px;
+	border: 1px #000000 solid;
+}
+
+.received_people {
+	width: 70%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	background: #C6CB1E;
+}
+
+/*------------分页-----------*/
+.fenye_box {
+	margin: 0 auto;
+	text-align: center;
+}
+
+ul.pagination {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+ul.pagination li {
+	display: inline;
+}
+
+ul.pagination li a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border: 1px solid #ddd;
+}
+
+.pagination li:first-child a {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child a {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+ul.pagination li a.active {
+	background-color: #4CAF50;
+	color: white;
+	border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not (.active ) {
+	background-color: #ddd;
+}

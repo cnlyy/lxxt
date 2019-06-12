@@ -1,0 +1,28 @@
+.b_c {
+	width: 300px;
+	height: 280px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+.videos_img {
+	text-align: center;
+	padding-top: 15px;
+}
+.p_video_name {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: left;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+	color: black;
+}
+.p_video_explain {
+	width: 80%;
+	margin: auto;
+}
+.link_name {
+	font-size: 16px;
+}

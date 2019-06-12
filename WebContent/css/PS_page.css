@@ -1,0 +1,108 @@
+.videos_big_box {
+	width: 1500px;
+	height: auto;
+	margin: 0 auto;
+}
+.videos_box {
+	width: 1500px;
+	margin: 0 auto;
+	height: 900px;
+}
+.videos_box_1 {
+	width: 1500px;
+	height: 280px;
+	margin-top: 0px;
+}
+.videos_1_1 {
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.videos_img_box {
+	width: 100%;
+}
+.videos_img {
+	text-align: center;
+	padding-top: 15px;
+}
+.video_name {
+}
+.p_video_name {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 16px;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+}
+.video_explain_box {
+}
+.p_video_explain {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 12px;
+	padding-top: 5px;
+	color: #868686;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+}
+/********************************/
+
+.videos_1_2 {
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.videos_1_3 {
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.videos_1_4 {
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.videos_1_5 {
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+/*------------分页-----------*/
+.fenye_box {
+	margin: 0 auto;
+	text-align: center;
+}
+ul.pagination {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+ul.pagination li {
+	display: inline;
+}
+ul.pagination li a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border: 1px solid #ddd;
+}
+.pagination li:first-child a {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.pagination li:last-child a {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+ul.pagination li a.active {
+	background-color: #4CAF50;
+	color: white;
+	border: 1px solid #4CAF50;
+}
+ul.pagination li a:hover:not(.active) {
+	background-color: #ddd;
+}

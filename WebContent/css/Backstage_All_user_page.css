@@ -1,0 +1,180 @@
+.share_box {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 5px;
+	background: #969696;
+}
+.title {
+	width: 45%;
+	height: 35px;
+	margin: 0 auto;
+	text-align: center;
+	background: #59941D;
+}
+.p_title {
+	font-size: 20px;
+	line-height: 35px;
+}
+.link_type {
+	width: 100%;
+	height: 30px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	float: left;
+}
+.p_link_type {
+	height: 30px;
+	font-size: 16px;
+	float: left;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.link_type_input {
+	width: 300px;
+	height: 25px;
+	border-radius: 3px;
+	border: 0.5px solid #378888;
+}
+/*********************/
+
+._link {
+	width: 100%;
+	height: 30px;
+	padding-bottom: 15px;
+	float: left;
+}
+.p_link {
+	height: 30px;
+	font-size: 16px;
+	float: left;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.link_input {
+	width: 50%;
+	;
+	height: 25px;
+	padding-top: 2px;
+	border-radius: 3px;
+	border: 0.5px solid #378888;
+}
+/*********************/
+
+.btn {
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+.btn_button {
+	width: 80px;
+	height: 30px;
+	border: 1px;
+	font-family: 黑体;
+	font-size: 16px;
+	border-radius: 10px;		/*设置圆角*/
+	background-color: #497F2C;
+}
+/*************************************************************/
+
+.all_link_box {
+	width: 80%;
+	margin: 0 auto;
+}
+.all_link_title {
+	width: 100%;
+}
+.title_type {
+	height: 30px;
+	background: #A29E9E;
+}
+.p_title_type {
+	font-size: 16px;
+}
+/**********/
+
+.all_link_type {
+	width: 10%;
+	text-align: center;
+}
+.all_link {
+	width: 60%;
+	text-align: center;
+}
+.link_man {
+	width: 10%;
+	text-align: center;
+}
+/**********/
+
+
+.tr_link {
+	width: 100%;
+	height: 30px;
+	background: #E3E3E3;
+}
+.link1 {
+	width: 10%;
+	margin: 0 auto;
+	text-align: center;
+}
+.link2 {
+	width: 80%;
+	text-align: center;
+	padding-left: 10px;
+	text-align: left;
+ 	table-layout:word-wrap,break-word;
+	word-break: break-all;
+}
+.link3 {
+	width: 10%;
+	text-align: center;
+}
+.p_link1 {
+	font-size: 14px;
+}
+.p_link2 {
+	font-size: 14px;
+}
+.p_link3 {
+	font-size: 14px;
+}
+/*------------分页-----------*/
+
+.fenye_box {
+	margin: 0 auto;
+	text-align: center;
+}
+ul.pagination {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+ul.pagination li {
+	display: inline;
+}
+ul.pagination li a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border: 1px solid #ddd;
+}
+.pagination li:first-child a {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.pagination li:last-child a {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+ul.pagination li a.active {
+	background-color: #4CAF50;
+	color: white;
+	border: 1px solid #4CAF50;
+}
+ul.pagination li a:hover:not(.active) {
+	background-color: #ddd;
+}

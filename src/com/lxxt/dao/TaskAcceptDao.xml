@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxxt.dao.TaskAcceptDao">
+
+	<resultMap id="BaseResultMap" type="com.lxxt.po.TaskAccept">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="acceptUser" property="acceptUser" jdbcType="VARCHAR" />
+		<result column="skill" property="skill" jdbcType="VARCHAR" />
+		<result column="nickname" property="nickname" jdbcType="VARCHAR" />
+		<result column="wechat" property="wechat" jdbcType="VARCHAR" />
+		<result column="taskId" property="taskId" jdbcType="INTEGER" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		id,acceptuser,skill,nickname,wechat,taskid
+	</sql>
+
+	<insert id="taskAccept">
+		INSERT INTO
+		taskaccept(acceptuser,skill,nickname,wechat,taskid)
+		VALUES
+		(#{acceptuser}, #{skill}, #{nickname}, #{wechat},#{taskid});
+	</insert>
+
+	<update id="updateAccept">
+		update task set accept=#{newAccept} where id = #{id}
+	</update>
+
+	<select id="findMsgOfAccept" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from taskaccept where taskid = #{taskid}
+		<if test="start!=null and size!=null">
+			limit #{start},#{size}
+		</if>
+	</select>
+	
+	<select id="selectCount" resultType="int">
+		select count(*) from taskaccept
+	</select>
+	
+	<delete id="deleteTaskAccept">
+		delete from taskaccept where taskid=#{taskid}
+	</delete>
+	
+	<delete id="deleteTaskAcceptByUser">
+		delete from taskaccept where acceptuser=#{user}
+	</delete>
+</mapper>

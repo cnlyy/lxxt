@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Lantighei SC","Microsoft Yahei",宋体,Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	font-style: normal;
+}
+
+li,ul,img,a,div{
+	border: 0;
+	list-style: none;
+}
+
+div{
+	display: block;
+}
+
+a{
+	color: aquamarine;
+	text-decoration: none;
+	outline: none;
+}
+
+em{
+	font-weight: normal;
+}
+
+.a1{
+	background:#222222;
+}
+
+.a2{
+	width: 980px;
+	height: 70px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.logo{
+	width: 134px;
+	height: 50px;
+	float: left;
+	padding-right: 10px;
+	padding-top: 1px;
+}
+
+.logo a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	margin-top: 12px;
+}
+
+.text{
+	height: 70px;
+	float: left;
+}
+
+.text li{
+	height: 70px;
+	float: left;
+	margin-right: 20px;
+}
+
+.text li *{
+	color:aquamarine;
+	font-size: 14px;
+	display: inline-block;line-height: 17px;
+	vertical-align: top;
+}
+
+.text li a{
+	height: 22px;
+	line-height: 22px;
+	padding: 26px 17px;
+}
+
+.text li.active{
+	background: #363636;
+}
+
+.text li a:hover{
+	background: #363636;
+}
+
+.My_message{
+	width: 70px;
+	height: 70px;
+	background: #ED0A0E;
+	float: right;	
+}
+
+.My_message_text{
+	margin: 20px;
+}
+

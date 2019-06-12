@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxxt.dao.PsVideoDao">
+	
+	<resultMap id="BaseResultMap" type="com.lxxt.po.PsVideo">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="psvideo_name" property="psvideo_name" jdbcType="VARCHAR" />
+		<result column="psvideo_introduce" property="psvideo_introduce"
+			jdbcType="VARCHAR" />
+		<result column="psvideo_route" property="psvideo_route"
+			jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		id, psvideo_name, psvideo_introduce, psvideo_route
+	</sql>
+
+	<insert id="insertMsg">
+	insert into ps_video(psvideo_name,psvideo_introduce,psvideo_route)
+	values(#{psvideo_name},#{psvideo_introduce},#{psvideo_route})
+	</insert>
+	
+	<select id="selectCount" resultType="int">
+		select count(*) from ps_video
+	</select>
+	
+	<!-- 根据分页数据start 和size查询数据 -->
+	<select id="findByPage" parameterType="Map" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from ps_video
+		<if test="start!=null and size!=null">
+			limit #{start},#{size}
+		</if>
+	</select>
+	
+	<select id="findPsById" resultType="PsVideo">
+		select * from ps_video where id = #{id}
+	</select>
+</mapper>

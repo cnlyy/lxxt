@@ -1,0 +1,207 @@
+.details {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background: #777777;
+}
+.user_ {
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: #2AA431;
+}
+/****************标题***************/
+.details_title {
+	width: 100%;
+	height: 50px;
+}
+.p_details_title {
+	width: auto;
+	font-size: 16px;
+	float: left;
+	line-height: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.user_information {
+	width: 30%;
+	height: 50px;
+	float: right;
+	background: #3A78CB;
+}
+.user_name {
+	width: 100%;
+	height: 25px;
+	float: left;
+}
+.user_name_img {
+	width: 20px;
+	padding-top: 2px;
+	float: left;
+}
+.p_user_name {
+	float: left;
+	padding-left: 8px;
+	line-height: 25px;
+}
+.user_time {
+	width: 100%;
+	height: 25px;
+	float: left;
+}
+.user_time_img {
+	width: 20px;
+	padding-top: 2px;
+	float: left;
+}
+.p_user_time {
+	float: left;
+	padding-left: 8px;
+	line-height: 25px;
+}
+/****************简介***************/
+
+.problem_details {
+	width: 100%;
+	height: auto;
+}
+.p_problem_details {
+	font-size: 14px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-indent: 2em;/*首行空两格*/
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+}
+/****************发表的图片***************/
+.user_img {
+	width: 700px;
+	height: auto;
+}
+.images {
+	padding: 20px 20px 20px 20px;
+	width: 60%;
+}
+/****************评论区***************/
+
+.comment {
+	width: 900px;
+	height: 80px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: #9E9E9E;
+}
+.my_comment {
+	width: 75%;
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.input_my_comment {
+	width: 805px;
+	height: 60px;
+	font-size: 14px;
+	padding-left: 5px;
+	resize: none;			/*禁止拉伸*/
+	border-radius: 3px;
+	border: 0.5px solid #378888;
+}
+/*********发表按钮********/
+.publish {
+	width: 60px;
+	height: 60px;
+	float: right;
+	font-size: 15px;
+	margin-top: 10.5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 0px solid;			/*设置边框*/
+	background-color: #2879F7;
+	border-radius: 10px;		/*设置圆角*/
+}
+/*********用户评论********/
+.people_comment{
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background: #F3F3F3;
+}
+
+.comment_box{
+	width: 95%;
+	margin: 0 auto;
+}
+.comment_1{
+	width: 100%;
+	height: 25px;
+}
+.comment_text{
+	width: 85%;
+	padding-top: 10px;
+}
+.comment_time{
+	width: 15%;
+}
+.p_comment_text{/*评论内容*/
+	font-size: 14px;
+	/*text-indent: 2em;首行空两格*/
+	word-wrap: break-word;/*自动换行*/
+	word-break: break-all;
+	overflow: hidden;
+}
+.p_comment_time{/*评论时间*/
+	text-align: center;
+}
+
+
+/*------------分页----------*/
+.fenye_box {
+	margin: 0 auto;
+	text-align: center;
+}
+ul.pagination {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+ul.pagination li {
+	display: inline;
+}
+ul.pagination li a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border: 1px solid #ddd;
+}
+.pagination li:first-child a {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.pagination li:last-child a {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+ul.pagination li a.active {
+	background-color: #4CAF50;
+	color: white;
+	border: 1px solid #4CAF50;
+}
+ul.pagination li a:hover:not(.active) {
+	background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+

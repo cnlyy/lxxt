@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lxxt.dao.ResourceDao">
+
+
+	<resultMap id="BaseResultMap" type="com.lxxt.po.Resource">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="name" property="name" jdbcType="VARCHAR" />
+		<result column="link" property="link" jdbcType="VARCHAR" />
+		<result column="uploader" property="uploader" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		id, name, link, uploader
+	</sql>
+
+	<select id="selectCount" resultType="int">
+		select count(*) from resource
+	</select>
+	
+	<!-- 根据分页数据start 和size查询数据 -->
+	<select id="findByPage" parameterType="Map" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from resource
+		<if test="start!=null and size!=null">
+			limit #{start},#{size}
+		</if>
+	</select>
+	
+	<!-- 分享 -->
+    <insert id="shareResource">
+         insert into resource(name,link,uploader)
+         value(#{name},#{link},#{uploader})
+    </insert>
+	
+	<delete id="deleteResource">
+		delete from resource where id=#{id}
+	</delete>
+</mapper>

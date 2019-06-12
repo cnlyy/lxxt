@@ -1,0 +1,99 @@
+.content {
+	color: #ffffff;
+	font-size: 40px;
+}
+.content-front {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	text-align: center;
+}
+.bg {
+	background: url(../images/Wheel_planting/pt1.jpg);
+	height: 862px;
+	text-align: center;
+	line-height: 600px;
+}
+.bg-blur {
+	float: left;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+	filter: blur(3px);
+}
+/****************************************/
+/****************************************/
+.box {
+	width: 450px;
+	height:250px;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+.file_box{
+	width: 450px;
+	height: 210px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: #118E42;
+	opacity:0.90;/*半透明*/
+}
+
+.file_name{
+	padding-top: 15px;
+	padding-left: 15px;
+}
+.p_file_name{
+	float: left;
+	font-size: 16px;
+	font-family: '黑体';
+	padding-right: 5px;
+}
+.input_name{
+	width: 350px;
+	height: 18px;
+}
+/*+++++++++++++++++++++++*/
+.file_jianjie{
+	padding-top: 5px;
+	padding-left: 15px;
+}
+.p_file_jianjie{
+	float: left;
+	font-size: 16px;
+	font-family: '黑体';
+	padding-right: 5px;
+}
+.input_jianjie{
+	width: 350px;
+	height: 70px;
+	resize:none;			/*禁止拉伸*/
+}
+
+/*********************************/
+.upload_box{
+	padding-top: 15px;
+	padding-left: 52px;
+}
+
+
+.upload_button_box{
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
+}
+.upload_button{
+	width: 55px;
+	height: 30px;
+	font-size: 18px;
+	font-family: '黑体';
+	border-radius:3px;
+	border:1px #000000 solid;
+	background: #2AE42E;
+}
